@@ -55,27 +55,78 @@
     <UnityVersion>6000.1.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Player\PlayerObserver.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\GameSystem\IntValue.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\EventBus\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Utl\CamAlign.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\EnemyAttack.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\GameSystem\GUI\BuyButton.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Damage\DamageTypeCollection.cs" />
+    <Compile Include="Assets\ABC.cs" />
+    <Compile Include="Assets\Scripts\FSM\Transition.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Base\EnemyData.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\EventBus\GameEventDatabase.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHPBar.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Utils\EnemyCatcher.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\HeroObserver.cs" />
     <Compile Include="Assets\_ExternalAssets\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Enemy\Observer\EnemyDieController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Enemy\Observer\NavmeshController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Utils\Target.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Observer\EnemyHPBar.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Base\EnemyAttackBehaviour.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\AttackState.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\DeathState.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\LevelUpVFXController.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Base\EnemyController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyFSM.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\GameSystem\MoneyController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Skill\SkillController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Skill\SkillVFXController.cs" />
+    <Compile Include="Assets\Scripts\SwordAttack.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\HeroModel.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Attack\ProjecttileController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Attack\TargetSelector.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\AlignToState.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\IdleState.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Skill\SkillData.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\GameSystem\GUI\NumberPresenter.cs" />
     <Compile Include="Assets\_ExternalAssets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Enemy\Observer\HitVFXController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Damage\DamageType.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Base\EnemyObserver.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Skill\Skill.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Base\EnemyMoveBehaviour.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Attack\AttackController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Enemy\EnemyDropMoneyPresenter.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\MoveState.cs" />
     <Compile Include="Assets\_ExternalAssets\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
+    <Compile Include="Assets\Scripts\FSM\State.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\TextController.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\EventBus\GameEventSubscriber.cs" />
+    <Compile Include="Assets\_ExternalAssets\HeroDefense_Bootcamp\Scripts\Hero\Damage\DamageData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\_ExternalAssets\WizardPolyArt\Shader\PolyArtMaskTint.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
-    <None Include="Assets\Starter Assets\Sample\Environment\Shaders\Built-in_RP\Triplanar.shader" />
+    <None Include="Assets\_ExternalAssets\Starter Assets\Sample\Environment\Shaders\Built-in_RP\Triplanar.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -86,10 +137,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Starter Assets\Sample\Environment\Shaders\Built-in_RP\ArmatureShader.shader" />
+    <None Include="Assets\_ExternalAssets\Starter Assets\Sample\Environment\Shaders\Built-in_RP\ArmatureShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\_ExternalAssets\WizardPolyArt\SRP\HowToTestSRPs.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -1250,6 +1302,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
@@ -1296,6 +1352,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.StarterAssets.Editor.csproj">
+      <Project>{B159E41F-6014-A894-0221-8EE373605C7C}</Project>
+      <Name>Unity.StarterAssets.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="URPWizard.csproj">
       <Project>{AEFA84D6-6D5A-7630-B5DF-82646729ED0F}</Project>
       <Name>URPWizard</Name>
@@ -1303,10 +1363,6 @@
     <ProjectReference Include="Unity.StarterAssets.csproj">
       <Project>{B225EBA1-6938-E265-4DFE-7FF703EC6A4D}</Project>
       <Name>Unity.StarterAssets</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.StarterAssets.Editor.csproj">
-      <Project>{B159E41F-6014-A894-0221-8EE373605C7C}</Project>
-      <Name>Unity.StarterAssets.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
