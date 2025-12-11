@@ -6,11 +6,15 @@ using UnityEngine.AI;
 public class AttackState : State
 {
     private float attackDuration;
-   
     private float attackStartTime;
+    private float colliderDelay = 0.5f;
+
     private NavMeshAgent navMeshAgent;
     private Collider attackCollider;
-    public AttackState(float eAttackDuration,NavMeshAgent eNavMeshAgent, Collider attackCollider)
+
+    private bool colliderActivated;
+
+    public AttackState(float eAttackDuration, NavMeshAgent eNavMeshAgent, Collider attackCollider)
     {
         attackDuration = eAttackDuration;
         navMeshAgent = eNavMeshAgent;
@@ -21,31 +25,38 @@ public class AttackState : State
     public override void Enter()
     {
         base.Enter();
+
         navMeshAgent.isStopped = true;
+
         attackStartTime = Time.time;
-        float timeToTurnOnCollider = 1f;
-        //while (Time.time < attackStartTime + timeToTurnOnCollider)
-        //{
-        //    //wait
-        //}
-        attackCollider.enabled = true;
+        colliderActivated = false;
+
+        attackCollider.enabled = false;
+    }
+
+    public override void Step()
+    {
+        float elapsed = Time.time - attackStartTime;
+
+        if (!colliderActivated && elapsed >= colliderDelay)
+        {
+            colliderActivated = true;
+            attackCollider.enabled = true;
+        }
     }
 
     public override void Exit()
     {
         base.Exit();
+
         attackCollider.enabled = false;
+        navMeshAgent.isStopped = false;
     }
 
-    //--------Helper Condition for Transitions to decide whether to transition to the next state
     public bool AttackOver()
     {
-        navMeshAgent.isStopped = false;
-        
         return Time.time > attackStartTime + attackDuration;
     }
-
-    
 
 
 }
