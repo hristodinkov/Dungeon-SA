@@ -30,4 +30,14 @@ public class PlayerHPBar : PlayerObserver
         hpBarImage.fillAmount = currentHP / maxHP;
         hpText.text = $"{currentHP} / {maxHP}";
     }
+    public void Heal(int healAmount)
+    {
+        playerData.currentHP += healAmount;
+        if (playerData.currentHP > playerData.maxHP)
+        {
+            playerData.currentHP = playerData.maxHP;
+        }
+        currentHP = playerData.currentHP;
+        UpdateHPBar();
+    }
 }
